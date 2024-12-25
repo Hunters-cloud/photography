@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack H Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf4fb;
+            color: #333;
+        }
+        header {
+            background-color: #3c8dbc;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: #3c8dbc;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .menu-button {
+            background-color: white;
+            color: #3c8dbc;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-button:hover {
+            background-color: #d3ecfa;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 1em 2em;
+            background-color: #3c8dbc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2e6e91;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #3c8dbc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jack H Photography</h1>
+        <p>Based in Kenya | Capturing Timeless Moments</p>
+    </header>
+    
+    <nav>
+        <div>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-button" onclick="showSignup()">Sign Up</button>
+    </nav>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore some of my work and let me capture your moments with elegance.</p>
+        <a href="#contact" class="button">Book a Shoot</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I am Jack H, an award-nominated photographer based in Kenya. I specialize in capturing the essence of life through the lens, whether it's family portraits, weddings, or special events.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Reach out via email at <a href="mailto:jackh5767@gmail.com">jackh5767@gmail.com</a></p>
+        <p>Click to WhatsApp me directly: <a href="https://wa.me/254745647045" class="button">WhatsApp Me</a></p>
+    </section>
+
+    <section id="book">
+        <h2>Book a Photoshoot</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location">Where are you from?</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="shoot-type">Type of Shoot:</label>
+            <select id="shoot-type" name="shoot-type" required>
+                <option value="">Select</option>
+                <option value="family">Family Photos</option>
+                <option value="portrait">Portraits</option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="event">Event</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="other-shoot">If other, please specify:</label>
+            <textarea id="other-shoot" name="other-shoot" rows="4"></textarea>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jack H Photography | Kenya</p>
+    </footer>
+
+    <script>
+        function showSignup() {
+            alert('Please sign up to book a photoshoot.');
+        }
+    </script>
+</body>
+</html>
